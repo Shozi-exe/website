@@ -1,14 +1,15 @@
-function getInput(){
-let input = document.getElementById("type").value;
+function getInput() {
+    let input = document.getElementById("type").value;
 
-let email = "shozabdocx@gmail.com";
-let subject = "Hello Shozab";
-let body = "Hi , I visited your website . I am " + input;
+    let email = "shozabdocx@gmail.com";
+    let subject = "Hello Shozab";
+    let body = "Hi, I visited your website. I am " + input;
 
-let gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
-window.open(gmailUrl, "_blank");
+    let gmailUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-document.getElementById("type").value = "";
+    window.location.href = gmailUrl;
+
+    document.getElementById("type").value = "";
 }
 
 function openWP(){
