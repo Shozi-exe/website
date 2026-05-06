@@ -20,7 +20,7 @@
 
 .nav {
 
-    padding: 15px 110px;
+    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -41,6 +41,11 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .intro{
@@ -109,4 +114,96 @@
     cursor: pointer;
     font-size: medium;
     font-weight: bold;
+}
+
+.bg{
+    height: 100%;
+    border: 0px;
+    padding: 0px;
+    height: 100vh;
+    width : 100%;
+
+    background:rgba(0, 0, 0, 0.779);
+    background-image : url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.formlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.formlogo img{
+
+    width: 150px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: #bab4b493;
+    width: 200px;
+    height: 500px;
+    margin: 0px auto;
+    padding: 50px 200px;
+    border: none;
+    box-shadow: #000000 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.content input{
+    margin: 10px 50px;
+    padding: 20px;
+    width: 300px;
+    background-color: #e0dcdc64;
+    border: 1px solid #00000049;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.content input::placeholder{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.content button{
+    margin : 15px 50px;
+    padding: 20px;
+    width: 300px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fdf5f5;
+    font-weight: normal;
+}
+.content p a{
+    color: #029aff;
+    text-decoration: none;
+    font-weight: normal;
 }
