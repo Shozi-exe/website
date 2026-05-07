@@ -11,9 +11,3 @@ function getInput() {
 
     document.getElementById("type").value = "";
 }
-
-function openWP(){
-    let message = "Hi Shozab , I visited your vebsite .";
-    let url = `https://wa.me/923316903192?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-}
